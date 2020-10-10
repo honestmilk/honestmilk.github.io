@@ -2,7 +2,6 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import ReactDatetime from "react-datetime";
 
 // reactstrap components
 import {
@@ -34,7 +33,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/ill/4022195.svg")}
+                      src={require("../assets/img/ill/4022195.svg")}
                     />
                   </div>
                 </Col>

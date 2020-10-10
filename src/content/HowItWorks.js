@@ -8,12 +8,6 @@ function WorkIcon() {
   );
 }
 
-function SchoolIcon() {
-  return (
-    <i className="ni ni-chat-round" />
-  );
-}
-
 function HowItWorks() {
   return (
     <section className="section section-lg pb-0 pt-0" id="how-it-works">

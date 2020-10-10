@@ -34,7 +34,7 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/ill/8400.svg")}
+                      src={require("../assets/img/ill/8400.svg")}
                     />
                   </div>
                 </Col>

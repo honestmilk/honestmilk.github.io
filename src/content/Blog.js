@@ -5,7 +5,6 @@ import "react-multi-carousel/lib/styles.css";
 
 import {
   Card,
-  CardBody,
   Container,
   Row,
   CardImg,
@@ -73,7 +72,6 @@ class Features extends React.Component {
                     partialVisibilityGutter: 30
                   }
                 }}
-                showDots={false}
                 sliderClass=""
                 slidesToSlide={1}
                 swipeable
