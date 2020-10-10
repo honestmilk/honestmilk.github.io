@@ -1,5 +1,5 @@
 import React from "react";
-
+import Logo from "../assets/img/brand/Logo.png";
 // reactstrap components
 import { Card, Container, Row, Col } from "reactstrap";
 
@@ -22,7 +22,7 @@ class Profile extends React.Component {
                       <img
                         alt="..."
                         className="rounded-circle"
-                        src={require("../assets/img/brand/Logo.png")}
+                        src={Logo}
                         style={{
                           height: 200
                         }}

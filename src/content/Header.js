@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
+import Logo from "../assets/img/brand/Logo.png";
 // reactstrap components
 import {
   UncontrolledCollapse,
@@ -74,7 +75,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("../assets/img/brand/Logo.png")}
+                          src={Logo}
                         />
                       </Link>
                     </Col>

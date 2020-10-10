@@ -3,6 +3,11 @@ import React from "react";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 
+import blog1 from "../assets/img/blogs/blog1.jpeg";
+import blog2 from "../assets/img/blogs/blog2.jpeg";
+import blog3 from "../assets/img/blogs/blog3.jpeg";
+import blog4 from "../assets/img/blogs/blog4.jpeg";
+
 import {
   Card,
   Container,
@@ -77,7 +82,7 @@ class Features extends React.Component {
                 swipeable
               >
                 <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
-                  <CardImg className="card-image" width="100%" src={require("../assets/img/blogs/blog1.jpeg")} alt="Card image cap" />
+                  <CardImg className="card-image" width="100%" src={blog1} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
                       <h3 className="text-white">
@@ -88,7 +93,7 @@ class Features extends React.Component {
                   </CardImgOverlay>
                 </Card>
                 <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
-                  <CardImg className="card-image" width="100%" src={require("../assets/img/blogs/blog2.jpeg")} alt="Card image cap" />
+                  <CardImg className="card-image" width="100%" src={blog2} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
                       <h3 className="text-white">
@@ -99,7 +104,7 @@ class Features extends React.Component {
                   </CardImgOverlay>
                 </Card>
                 <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
-                  <CardImg className="card-image" width="100%" src={require("../assets/img/blogs/blog3.jpeg")} alt="Card image cap" />
+                  <CardImg className="card-image" width="100%" src={blog3} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
                       <h3 className="text-white">
@@ -110,7 +115,7 @@ class Features extends React.Component {
                   </CardImgOverlay>
                 </Card>
                 <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
-                  <CardImg className="card-image" width="100%" src={require("../assets/img/blogs/blog4.jpeg")} alt="Card image cap" />
+                  <CardImg className="card-image" width="100%" src={blog4} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
                       <h3 className="text-white">
