@@ -12,7 +12,7 @@ function HowItWorks() {
   return (
     <section className="section section-lg pb-0 pt-0" id="how-it-works">
       <VerticalTimeline>
-        <h1>How It works</h1>
+        <h1 style={{textAlign: 'right'}}>How It works</h1>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           // date="Step 1"

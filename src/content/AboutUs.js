@@ -7,7 +7,7 @@ class Profile extends React.Component {
   render() {
     return (
       <>
-        <section className="section mt-8" id="about-us">
+        <section className="section pt-8" id="about-us">
           <Container>
             <Card className="card-profile shadow">
               <div className="px-4">

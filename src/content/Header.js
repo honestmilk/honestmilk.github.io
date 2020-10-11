@@ -57,7 +57,7 @@ class DemoNavbar extends React.Component {
                   style={{height: 60}}
                   src={require("assets/img/brand/Logo.png")}
                 /> */}
-                <h3>Honest Milk</h3>
+                <h3 className="mb-0">Honest Milk</h3>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -70,13 +70,21 @@ class DemoNavbar extends React.Component {
                 onExited={this.onExited}
               >
                 <div className="navbar-collapse-header">
-                  <Row>
+                  <Row className="align-items-center">
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
+                        <div 
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                          }}
+                        >
                         <img
                           alt="..."
                           src={Logo}
                         />
+                        <h1 className="ml-3 mb-0">Honest Milk</h1>
+                        </div>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">

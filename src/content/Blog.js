@@ -37,7 +37,6 @@ class Features extends React.Component {
               <Carousel
                 additionalTransfrom={0}
                 arrows
-                showDots
                 autoPlaySpeed={3000}
                 centerMode={false}
                 className=""
@@ -81,7 +80,7 @@ class Features extends React.Component {
                 slidesToSlide={1}
                 swipeable
               >
-                <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
+                <Card className="border-0 ms-2" style={{flexGrow: 1}}>
                   <CardImg className="card-image" width="100%" src={blog1} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
@@ -92,7 +91,7 @@ class Features extends React.Component {
                     <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
-                <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
+                <Card className="border-0 ms-2" style={{flexGrow: 1}}>
                   <CardImg className="card-image" width="100%" src={blog2} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
@@ -103,7 +102,7 @@ class Features extends React.Component {
                     <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
-                <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
+                <Card className="border-0 ms-2" style={{flexGrow: 1}}>
                   <CardImg className="card-image" width="100%" src={blog3} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>
@@ -114,7 +113,7 @@ class Features extends React.Component {
                     <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
-                <Card className="shadow border-0 ms-2" style={{flexGrow: 1}}>
+                <Card className="border-0 ms-2" style={{flexGrow: 1}}>
                   <CardImg className="card-image" width="100%" src={blog4} alt="Card image cap" />
                   <CardImgOverlay>
                     <CardTitle>

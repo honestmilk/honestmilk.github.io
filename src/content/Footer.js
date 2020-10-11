@@ -143,14 +143,14 @@ class SimpleFooter extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      href="/"
+                      href="#about-us"
                     >
                       About Us
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      href="/"
+                      href="#blog"
                     >
                       Blog
                     </NavLink>
