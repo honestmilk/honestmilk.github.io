@@ -13,6 +13,7 @@ import Features from "./Features";
 import ContactUs from "./ContactUs2";
 import BookVisit from './BookVisit';
 import HowItWorks from './HowItWorks';
+import PurityMeter from './PurityMeter';
 import Blog from './Blog';
 
 class Index extends React.Component {
@@ -26,6 +27,7 @@ class Index extends React.Component {
           <AboutUs />
           <Features />
           <Blog />
+          <PurityMeter />
           <BookVisit />
           <HowItWorks />
           <ContactUs />

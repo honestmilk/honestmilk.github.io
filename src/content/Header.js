@@ -113,6 +113,17 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
+                      href="#purity-meter"
+                      id="tooltip333589074"
+                    >
+                      <span className="nav-link-inner--text ml-2">
+                        Purity Meter
+                      </span>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      className="nav-link-icon"
                       href="#how-it-works"
                       id="tooltip333589074"
                     >

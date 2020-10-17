@@ -28,7 +28,7 @@ class SimpleFooter extends React.Component {
                   With ‘Honest Milk’, we aspire to serve these standard quality products to the larger section of household. In future, we look forward to serve you with a variety of dairy products at your table. 
                 </h6>
               </Col>
-              <Col className="btn-wrapper" lg="6" style={{display: 'flex', alignItems: 'flex-end', flexDirection: 'column'}}>
+              <Col id="footer-details" className="btn-wrapper" lg="6">
                 <div>
                   <Button
                     className="btn-icon-only rounded-circle ml-1"

@@ -2,9 +2,11 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import logo from '../assets/img/brand/android-chrome-192x192.png'
+
 function WorkIcon() {
   return (
-      <i className="ni ni-chat-round" />
+      <img src={logo} alt="icon" width="64px" />
   );
 }
 

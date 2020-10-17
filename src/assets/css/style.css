@@ -35,8 +35,8 @@ body {
   justify-content: center;
 }
 .vertical-timeline::before {
-  /* background-color: var(--primary) !important; */
-  background: linear-gradient(180deg, var(--warning), var(--primary)) !important;
+  background-color: var(--primary) !important;
+  /* background: linear-gradient(180deg, var(--warning), var(--primary)) !important; */
 }
 /* .vertical-timeline-element-icon.bounce-in {
   background-color: var(--primary) !important;
@@ -99,12 +99,27 @@ body {
   .navbar-collapse .nav-item .nav-link {
     font-size: 2em;
   }
+  
+  #footer-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  
+  #footer-details {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1100px;
   }
+  
+  
 }
 /* 
 @media (min-width: 992px) {
@@ -123,3 +138,43 @@ body {
   }
 } 
 */
+#book-visit {
+  background-color: rgb(149, 224, 199);
+}
+.stat-card {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px;
+  /* margin: 0 10px; */
+  /* min-width: 150px; */
+}
+
+#navbar-main {
+  z-index: 1001;
+}
+
+.details {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.details .stats {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.8em;
+  align-self: stretch;
+  width: 25%;
+}
+
+.details div:nth-child(2) {
+  padding: 10px;
+  background-color: white;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  border-radius:  0 10px 10px 0;
+}

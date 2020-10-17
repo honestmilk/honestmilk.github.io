@@ -2,7 +2,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import contactUs from "../assets/img/ill/4022195.svg";
+import contactUs from "../assets/img/ill/contact.svg";
 // reactstrap components
 import {
   Container,
@@ -105,7 +105,7 @@ class Landing extends React.Component {
                     <Button
                       block
                       className="btn-round"
-                      color="warning"
+                      style={{backgroundColor: 'rgb(149, 224, 199)', border: 0}}
                       size="lg"
                       type="button"
                     >

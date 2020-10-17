@@ -3,7 +3,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import ReactDatetime from "react-datetime";
-import farmSVG from "../assets/img/ill/8400.svg";
+import farmSVG from "../assets/img/ill/farm.svg";
 
 // reactstrap components
 import {
@@ -19,6 +19,7 @@ import {
 } from "reactstrap";
 
 // import Datepicker from "./IndexSections/Datepicker.js";
+import farm from '../assets/img/ill/farm.jpg';
 
 class Landing extends React.Component {
   state = {};
@@ -27,16 +28,26 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-        <section className="section pb-0 bg-gradient-warning pb-6" id="book-visit">
+        <section 
+          className="section pb-0 pb-6" 
+          id="book-visit"
+          style={{
+            backgroundImage: `url(${farmSVG})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center',
+            backgroundAttachment: 'fixed',
+            backgroundSize: 'cover'
+          }}
+        >
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
                   <div className="position-relative pl-md-5 ">
-                    <img
+                    {/* <img
                       alt="..."
                       className="img-center img-fluid"
                       src={farmSVG}
-                    />
+                    /> */}
                   </div>
                 </Col>
                 <Col className="order-lg-1" lg="6">
@@ -47,8 +58,8 @@ class Landing extends React.Component {
                       </div>
                     </div>
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Book A Farm Visit</h4>
-                      <p className="text-white">
+                      <h4 className="display-3 text-white text-bold text-shadow">Book A Farm Visit</h4>
+                      <p className="text-white text-bold text-shadow">
                         Visit our farm where you can get a closer look at our testing laboratory. <br />
                         See how we deliver quality we promise.
                       </p>
