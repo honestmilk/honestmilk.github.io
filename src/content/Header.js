@@ -57,7 +57,16 @@ class DemoNavbar extends React.Component {
                   style={{height: 60}}
                   src={require("assets/img/brand/Logo.png")}
                 /> */}
-                <h3 className="mb-0">Honest Milk</h3>
+                <h3 
+                  style={{
+                    fontFamily: 'FontAwesome',
+                    display: 'flex',
+                    alignItems: 'center',
+                    fontWeight: 'bold',
+                    color: 'var(--primary)'
+                  }}
+                  className="mb-0"
+                >H<img src={Logo} height="24px"></img>nest Milk</h3>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -79,11 +88,16 @@ class DemoNavbar extends React.Component {
                             alignItems: 'center',
                           }}
                         >
-                        <img
-                          alt="..."
-                          src={Logo}
-                        />
-                        <h1 className="ml-3 mb-0">Honest Milk</h1>
+                        <h3 
+                          style={{
+                            fontFamily: 'FontAwesome',
+                            display: 'flex',
+                            alignItems: 'center',
+                            fontWeight: 'bold',
+                            color: 'var(--primary)'
+                          }}
+                          className="mb-0"
+                        >H<img src={Logo} height="24px"></img>NEST MILK</h3>
                         </div>
                       </Link>
                     </Col>
@@ -154,7 +168,18 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                   </NavItem>
-                  <NavItem>
+                  <NavItem className="d-lg-none">
+                    <NavLink
+                      className="nav-link-icon"
+                      href="#book-visit"
+                      id="tooltip333589074"
+                    >
+                      <span className="nav-link-inner--text ml-2">
+                        Book a Farm Visit
+                      </span>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem className="d-none d-lg-block">
                     <Button
                       className="btn-neutral btn-icon ml-2"
                       color="primary"

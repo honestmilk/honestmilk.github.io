@@ -224,3 +224,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+p {
+  font-weight: 400;
+}

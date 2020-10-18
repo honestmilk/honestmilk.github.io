@@ -111,7 +111,7 @@ class SimpleFooter extends React.Component {
                           </div>
                         </td>
                         <td>
-                          support@honestmilk.in
+                        <a href="mailto:support@honestmilk.in">support@honestmilk.in</a>
                         </td>
                       </tr>
                     </tbody>

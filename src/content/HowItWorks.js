@@ -17,7 +17,7 @@ function HowItWorks() {
         <h1 style={{textAlign: 'right'}}>How It works</h1>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          // date="Step 1"
+          // date={<WorkIcon />}
           iconStyle={{ background: 'var(--warning)', color: '#fff' }}
           icon={<WorkIcon />}
         >

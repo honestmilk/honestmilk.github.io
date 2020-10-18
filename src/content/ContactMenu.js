@@ -13,9 +13,11 @@ function ContactMenu() {
       id="contact-menu"
     >
       <div className="mb-1 menu" style={{display: 'flex', flexDirection: 'column'}}>
-        <div className="icon icon-lg icon-shape bg-gradient-white  rounded-circle text-primary mb-1">
-          <i className="ni ni-email-83 text-primary" />
-        </div>
+        <a href="mailto:support@honestmilk.in">
+          <div className="icon icon-lg icon-shape bg-gradient-white  rounded-circle text-primary mb-1">
+            <i className="ni ni-email-83 text-primary" />
+          </div>
+        </a>
         <div className="icon icon-lg icon-shape bg-gradient-white  rounded-circle text-primary mb-1">
           <i className="fa fa-phone text-primary" />
         </div>
