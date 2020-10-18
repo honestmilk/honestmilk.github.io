@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/img/brand/Logo.png";
 // reactstrap components
-import { Card, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 class Profile extends React.Component {
   render() {

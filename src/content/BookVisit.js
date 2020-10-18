@@ -3,7 +3,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import ReactDatetime from "react-datetime";
-import farmSVG from "../assets/img/ill/farm.svg";
+// import farmSVG from "../assets/img/ill/farm.svg";
 
 // reactstrap components
 import {
@@ -19,7 +19,7 @@ import {
 } from "reactstrap";
 
 // import Datepicker from "./IndexSections/Datepicker.js";
-import farm from '../assets/img/ill/farm.jpg';
+import farmSVG from '../assets/img/ill/farm.jpg';
 
 class Landing extends React.Component {
   state = {};

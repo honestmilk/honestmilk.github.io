@@ -45,7 +45,11 @@ body {
   margin: 0 20px;
 }
 .card-image {
-  filter: blur(3px) brightness(40%);
+  /* filter: blur(6px) brightness(40%); */
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .react-multi-carousel-list.container {
@@ -157,6 +161,7 @@ body {
   display: flex;
   margin-top: 10px;
   align-items: center;
+  margin: 10px 0 0 0 ;
 }
 
 .details .stats {
@@ -164,17 +169,57 @@ body {
   color: white;
   border-radius: 10px 0 0 10px;
   padding: 10px 20px;
-  text-align: center;
+  align-items: center;
   font-size: 0.8em;
   align-self: stretch;
-  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details div.col-4 {
+  align-self: stretch;
 }
 
-.details div:nth-child(2) {
+.details div.col-8 {
   padding: 10px;
   background-color: white;
   align-self: stretch;
   display: flex;
   align-items: center;
   border-radius:  0 10px 10px 0;
+}
+
+.toggler {
+  cursor: pointer;
+}
+
+.toggler::before {
+  content: '> ';
+  margin-right: 10px;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+.description {
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.6s;
+  margin-top: 0;
+}
+.feature-card:hover .description {
+  margin-top: 1em;
+  height: 110px;
+}
+
+.feature-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

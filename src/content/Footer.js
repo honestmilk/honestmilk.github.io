@@ -136,7 +136,7 @@ class SimpleFooter extends React.Component {
                 <Nav className=" nav-footer justify-content-end">
                   <NavItem>
                     <NavLink
-                      href="/"
+                      href="#"
                     >
                       Honest Milk
                     </NavLink>
@@ -146,6 +146,13 @@ class SimpleFooter extends React.Component {
                       href="#about-us"
                     >
                       About Us
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      href="#faq"
+                    >
+                      FAQ
                     </NavLink>
                   </NavItem>
                   <NavItem>

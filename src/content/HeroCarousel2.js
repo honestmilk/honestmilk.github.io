@@ -131,7 +131,6 @@ class MyCarousel extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    const marginLeft = (window.innerWidth / 2 - 150).toString() + 'px';
 
     const slides = items.map((item) => {
       return (

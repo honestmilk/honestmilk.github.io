@@ -88,7 +88,7 @@ class Features extends React.Component {
                         Most Common Adulterants in Milk
                       </h3>
                     </CardTitle>
-                    <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
+                    <CardText className="text-white d-none d-md-block">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
                 <Card className="border-0 ms-2" style={{flexGrow: 1}}>
@@ -99,7 +99,7 @@ class Features extends React.Component {
                         Most Common Adulterants in Milk
                       </h3>
                     </CardTitle>
-                    <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
+                    <CardText className="text-white d-none d-md-block">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
                 <Card className="border-0 ms-2" style={{flexGrow: 1}}>
@@ -110,7 +110,7 @@ class Features extends React.Component {
                         Most Common Adulterants in Milk
                       </h3>
                     </CardTitle>
-                    <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
+                    <CardText className="text-white d-none d-md-block">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
                 <Card className="border-0 ms-2" style={{flexGrow: 1}}>
@@ -121,7 +121,7 @@ class Features extends React.Component {
                         Most Common Adulterants in Milk
                       </h3>
                     </CardTitle>
-                    <CardText className="text-white">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
+                    <CardText className="text-white d-none d-md-block">Urea, Formalin, Detergents, Ammonium Sulfate, Boric Acid, Caustic Soda, Benzoic Acid, Salicylic Acid, Hydrogen peroxide, Sugars, and Melamine.</CardText>
                   </CardImgOverlay>
                 </Card>
               </Carousel>
