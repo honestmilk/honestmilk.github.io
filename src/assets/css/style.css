@@ -176,6 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .details div.col-4 {
   align-self: stretch;
@@ -215,7 +216,7 @@ body {
 }
 .feature-card:hover .description {
   margin-top: 1em;
-  height: 110px;
+  height: 140px;
 }
 
 .feature-card .card-body {
