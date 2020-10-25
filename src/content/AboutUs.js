@@ -39,8 +39,7 @@ class Profile extends React.Component {
                   <Row className="justify-content-center">
                     <Col>
                       <p style={{fontSize: 20, color: 'white'}}>
-                        Purity and cleanliness is what consumers look forward to in everything today. With ‘Honest Milk’, we not only tend to provide you the best offering but also guarantee you safety and world-class milk. We bring to you the promise of sanctity, the unmatched food-value and the dosage of unadulterated nutritional value. <br />
-                        India is the richest producer of most commonly used commodity - Milk, the godsend gift. But with the rapid growth of digitalisation of all goods in today’s centaury, the idea of services and sale has lost the touch of love. Even the quality has been brought to compromise. But worry not. With Honest Milk, we intend to reconnect with the nature and serve to you the absolute goodness at your homes.
+                      Honest Milk is a brand that not only strive to provide you the unadulterated chemical-free milk, but also guarantee you antibiotic and growth hormone free milk. We bring to you the promise of sanctity, the unmatched food-value and the dosage of unadulterated nutritional value. Our mission is to reach the families that lack access to the farm fresh milk and provide them with wholesome milk nutrition. Though India is the richest producer of most commonly used commodity - Milk, the godsend gift. But with the growing demand not only the quality has been compromised, but the production practices being used are not only affecting the cattle health, but also has adverse effects on environment. But worry not. With Honest Milk, we intend to reconnect with the nature and serve to you the absolute goodness at your doorstep.
                       </p>
                       {/* <a href="#pablo" onClick={e => e.preventDefault()}>
                         Show more

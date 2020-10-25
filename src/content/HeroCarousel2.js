@@ -4,36 +4,48 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  Row, Col
+  Row, Col, Button
 } from 'reactstrap';
 
 import Logo from "../assets/img/brand/Logo.png";
+import Banner1 from "../assets/img/banners/img1.jpg";
 
 const items = [
   {
     id: 1,
     altText: 'Farm Fresh Lab Tested',
-    render: (<div>
-      <Row className="hero-row">
-        <Col lg="4" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <div
-            className="card-profile-image text-center"
+    render: (
+      <section 
+        className="section pb-0 pb-6 hero-row" 
+        id="book-visit"
+        style={{
+          backgroundImage: `url(${Banner1})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          position:'relative'
+        }}
+      >
+        <div 
+          style={{
+            position: 'absolute',
+            bottom: 100,
+            right: '30%',
+          }}
+        >
+          <Button
+            className="btn-lg btn-icon ml-2"
+            color="primary"
+            href="#test-milk"
           >
-            <img
-              alt="..."
-              className="rounded-circle"
-              src={Logo}
-              style={{
-                height: 200
-              }}
-            />
-          </div>
-        </Col>
-        <Col lg="8" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <h1 className="header-heading" style={{color: "var(--success)"}}>Farm Fresh Lab Tested <br/>Cow and Buffalo Milk</h1>
-        </Col>
-      </Row>
-    </div>),
+          <span className="nav-link-inner--text ml-1">
+            Test Your Milk
+          </span>
+          </Button>
+        </div>
+      </section>
+    ),
     caption: '',
     src: 'https://github.com/chuanshuoge1/reactstrap/blob/gh-pages/image/1.png?raw=true'
   },
@@ -41,7 +53,30 @@ const items = [
     id: 2,
     altText: '',
     render: (<div>
-      <Row className="hero-row">
+      <Row 
+        className="hero-row"
+        style={{
+          position: 'relative'
+        }}
+      >
+        <div 
+          style={{
+            position: 'absolute',
+            bottom: 100,
+            right: '30%',
+            zIndex: 10
+          }}
+        >
+          <Button
+            className="btn-lg btn-icon ml-2"
+            color="primary"
+            href="#book-sample"
+          >
+          <span className="nav-link-inner--text ml-1">
+            Book a Free Sample
+          </span>
+          </Button>
+        </div>
         <Col lg="4" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <div
             className="card-profile-image text-center"

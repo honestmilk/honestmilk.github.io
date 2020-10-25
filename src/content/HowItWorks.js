@@ -2,11 +2,38 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import logo from '../assets/img/brand/android-chrome-192x192.png'
+import logo from '../assets/img/brand/android-chrome-192x192.png';
+import box from '../assets/img/icons/common/box.svg';
+import cow from '../assets/img/icons/common/cow.svg';
+import shipped from '../assets/img/icons/common/shipped.svg';
+import test from '../assets/img/icons/common/test-tube.svg';
 
 function WorkIcon() {
   return (
       <img src={logo} alt="icon" width="64px" />
+  );
+}
+
+
+function Cow() {
+  return (
+    <img src={cow} alt="icon" width="40px" />
+  );
+}
+
+function Box() {
+  return (
+    <img src={box} alt="icon" width="40px" />
+  );
+}
+function Delivery() {
+  return (
+    <img src={shipped} alt="icon" width="40px" />
+  );
+}
+function Testing() {
+  return (
+    <img src={test} alt="icon" width="40px" />
   );
 }
 
@@ -15,11 +42,15 @@ function HowItWorks() {
     <section className="section section-lg pb-0 pt-0" id="how-it-works">
       <VerticalTimeline>
         <h1 style={{textAlign: 'right'}}>How It works</h1>
+        <div className="hiw-ill" id="hiw-ill-1"></div>
+        <div className="hiw-ill" id="hiw-ill-2"></div>
+        <div className="hiw-ill" id="hiw-ill-3"></div>
+        <div className="hiw-ill" id="hiw-ill-4"></div>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           // date={<WorkIcon />}
-          iconStyle={{ background: 'var(--warning)', color: '#fff' }}
-          icon={<WorkIcon />}
+          iconStyle={{ background: 'var(--primary)', color: '#fff' }}
+          icon={<Cow />}
         >
           <h3 className="vertical-timeline-element-title">Co-Managed Farms</h3>
           <p>
@@ -29,8 +60,10 @@ function HowItWorks() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           // date="2010 - 2011"
-          iconStyle={{ background: 'var(--warning)', color: '#fff' }}
-          icon={<WorkIcon />}
+          iconStyle={{ background: 'var(--primary)', color: '#fff' }}
+          // icon={<WorkIcon />}
+          icon={<Testing />}
+          
         >
           <h3 className="vertical-timeline-element-title">Quality and Adulteration Testing</h3>
           {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
@@ -42,7 +75,7 @@ function HowItWorks() {
           className="vertical-timeline-element--work"
           // date="2008 - 2010"
           iconStyle={{ background: 'var(--primary)', color: '#fff' }}
-          icon={<WorkIcon />}
+          icon={<Box />}
         >
           <h3 className="vertical-timeline-element-title">Chilling and Packaging</h3>
           {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
@@ -54,7 +87,7 @@ function HowItWorks() {
           className="vertical-timeline-element--work"
           // date="2006 - 2008"
           iconStyle={{ background: 'var(--primary)', color: '#fff' }}
-          icon={<WorkIcon />}
+          icon={<Delivery />}
         >
           <h3 className="vertical-timeline-element-title">Delivery</h3>
           {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}

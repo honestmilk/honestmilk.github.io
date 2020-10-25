@@ -66,7 +66,7 @@ class DemoNavbar extends React.Component {
                     color: 'var(--primary)'
                   }}
                   className="mb-0"
-                >H<img src={Logo} height="24px"></img>nest Milk</h3>
+                >H<img src={Logo} alt="O" height="24px"></img>nest Milk</h3>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -88,7 +88,7 @@ class DemoNavbar extends React.Component {
                             alignItems: 'center',
                           }}
                         >
-                        <h3 
+                        <h4
                           style={{
                             fontFamily: 'FontAwesome',
                             display: 'flex',
@@ -97,7 +97,7 @@ class DemoNavbar extends React.Component {
                             color: 'var(--primary)'
                           }}
                           className="mb-0"
-                        >H<img src={Logo} height="24px"></img>NEST MILK</h3>
+                        >H<img src={Logo} alt="O" height="24px"></img><span>NEST MILK</span></h4>
                         </div>
                       </Link>
                     </Col>

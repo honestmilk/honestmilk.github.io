@@ -9,6 +9,33 @@ import {
   Col
 } from "reactstrap";
 
+
+import flask from '../assets/img/icons/common/flask.svg';
+import medal from '../assets/img/icons/common/medal.svg';
+import shield from '../assets/img/icons/common/shield.svg';
+import earth from '../assets/img/icons/common/planet-earth.svg';
+function Flask() {
+  return (
+    <img src={flask} alt="icon" width="40px" />
+  );
+}
+
+function Medal() {
+  return (
+    <img src={medal} alt="icon" width="40px" />
+  );
+}
+function Shield() {
+  return (
+    <img src={shield} alt="icon" width="40px" />
+  );
+}
+function EnvFriendly() {
+  return (
+    <img src={earth} alt="icon" width="40px" />
+  );
+}
+
 class Features extends React.Component {
   state = {};
   componentDidMount() {
@@ -29,17 +56,15 @@ class Features extends React.Component {
                 <Row className="row-grid">
                   <Col lg="6" style={{display: 'flex', flexDirection: 'column'}}>
                     <Card className="feature-card shadow border-0" style={{flexGrow: 1}}>
-                      <CardBody className="py-5">
+                      <CardBody className="py-4">
                         <div className="d-flex align-items-center">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle">
-                            <i className="ni ni-check-bold" />
-                          </div>
-                          <h3 style={{margin: 0, marginLeft: '10px'}} className="text-primary">
+                          <Medal />
+                          <h4 style={{margin: 0, marginLeft: '10px'}} className="text-primary">
                             Quality at its Best
-                          </h3>
+                          </h4>
                         </div>
                         <p className="description">
-                          We promise to provide you a glassful of healthy and preservative-free milk. It is important for your toddler to get the best to develop the brain, bones and muscles. Why not get him the best drink right from the start.
+                        Farm Fresh Raw Milk- Unlike other name brands where milk is highly processed and is generally 4-5 days old, Honest Milk is delivered at your doorstep within 5-6 hours of milking. It’s Pure, Raw and 100% natural milk without any processing or any cream separated.
                         </p>
                         {/* <Button
                           className="mt-4"
@@ -54,18 +79,17 @@ class Features extends React.Component {
                   </Col>
                   <Col lg="6" style={{display: 'flex', flexDirection: 'column'}}>
                     <Card className="feature-card shadow border-0" style={{flexGrow: 1}}>
-                      <CardBody className="py-5">
+                      <CardBody className="py-4">
                         
                         <div className="d-flex align-items-center">
-                          <div className="icon icon-shape icon-shape-success rounded-circle">
-                            <i className="ni ni-favourite-28" />
-                          </div>
-                          <h3 style={{margin: 0, marginLeft: '10px'}} className="text-success">
+                          <Flask />
+                          <h4 style={{margin: 0, marginLeft: '10px'}} className="text-success">
+                            {/* Free of Antibiotics and growth hormones */}
                             No compromise with the milking cycle
-                          </h3>
+                          </h4>
                         </div>
                         <p className="description">
-                          Honest Milk is a direction towards the upbringing of milk yield. We monitor the whole process right from the production to the delivery and bring in stringent quality control at each step of the chain. Quality control tests, complying with the global standards are an integral part of our manufacture.
+                         Honest milk is a direction towards the upbringing of milk yield. Our milk comes from the cows that are not treated with artificial growth hormones or antibiotics. We focus on animal health and nutrition to provide you and your family the best quality of milk without altering the natural production cycle.
                         </p>
                       </CardBody>
                     </Card>
@@ -74,34 +98,30 @@ class Features extends React.Component {
                 <Row className="row-grid">
                   <Col lg="6" style={{display: 'flex', flexDirection: 'column'}}>
                     <Card className="feature-card shadow border-0" style={{flexGrow: 1}}>
-                      <CardBody className="py-5">
+                      <CardBody className="py-4">
                         <div className="d-flex align-items-center">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle">
-                            <i className="ni ni-satisfied" />
-                          </div>
-                          <h3 style={{margin: 0, marginLeft: '10px'}} className="text-warning">
-                            Win-win for producers and consumers
-                          </h3>
+                          <Shield />
+                          <h4 style={{margin: 0, marginLeft: '10px'}} className="text-warning">
+                          No Preservatives
+                          </h4>
                         </div>
                           <p className="description">
-                            At Honest Milk, the cows are given the best diet and barred of any form of hormonal injections to enhance the milk yield. This even intensifies the health of children and adults as they get the unprocessed raw milk, which is tested daily and delivered within hours of being milked.
+                            Preservatives such as Formalin, Sodium Benzoate etc. are often used to increase the shelf life of milk and prevent spoilage. But this is not what we believe in! Our cold supply chain ensures that you get the fresh milk at your doorstep with it’s nutrients intact without adding any chemicals.
                           </p>
                       </CardBody>
                     </Card>
                   </Col>
                   <Col lg="6" style={{display: 'flex', flexDirection: 'column'}}>
                     <Card className="feature-card shadow border-0" style={{flexGrow: 1}}>
-                      <CardBody className="py-5">
+                      <CardBody className="py-4">
                         <div className="d-flex align-items-center">
-                          <div className="icon icon-shape icon-shape-default rounded-circle">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h3 style={{margin: 0, marginLeft: '10px'}} className="text-default">
+                          <EnvFriendly />
+                          <h4 style={{margin: 0, marginLeft: '10px'}} className="text-default">
                             Environment Friendly
-                          </h3>
+                          </h4>
                           </div>
                         <p className="description">
-                        With the plastic being accumulated at the highest level in the strata of environment today, we choose one of the safest materials for packaging – Glass. Unlike plastic, which is toxic and can leech into our food-chain, Glass is non-reactive and environmental-friendly too.
+                        Not only our production practices are environmental friendly, but we also ensure that our packaging is not a burden on the earth. That’s why we use recyclable and reusable glass bottles to package our milk.  Since glass is non-toxic and non-reactive, as compared to plastic, which can leach into food products, We couldn’t take any chances!
                         </p>
                       </CardBody>
                     </Card>

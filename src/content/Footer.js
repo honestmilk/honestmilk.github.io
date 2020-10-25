@@ -11,6 +11,7 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
+import constants from '../constants';
 
 class SimpleFooter extends React.Component {
   render() {
@@ -87,11 +88,13 @@ class SimpleFooter extends React.Component {
                           </div>
                         </td>
                         <td>
-                          Nanak Dairy Farms Gurgaon
+                          Organic Dairy Farm
                           <br/>
-                          Faridabad Road, Baliawas, 
+                          Village Dhanouni, 
+                          <br/>
+                          Tehsil Dera Bassi,
                           <br />
-                          Gurgaon, Haryana- 122005
+                          District Mohali
                         </td>
                       </tr>
                       <tr>
@@ -101,7 +104,8 @@ class SimpleFooter extends React.Component {
                           </div>
                         </td>
                         <td>
-                          +91 987 654 3210
+                          <a href={`tel:${constants.phone}`}>+91 81303 20977</a>
+                          
                         </td>
                       </tr>
                       <tr>
@@ -111,7 +115,7 @@ class SimpleFooter extends React.Component {
                           </div>
                         </td>
                         <td>
-                        <a href="mailto:support@honestmilk.in">support@honestmilk.in</a>
+                        <a href={`mailto:${constants.email}`}>support@honestmilk.in</a>
                         </td>
                       </tr>
                     </tbody>
@@ -134,13 +138,7 @@ class SimpleFooter extends React.Component {
               </Col>
               <Col md="6">
                 <Nav className=" nav-footer justify-content-end">
-                  <NavItem>
-                    <NavLink
-                      href="#"
-                    >
-                      Honest Milk
-                    </NavLink>
-                  </NavItem>
+                  
                   <NavItem>
                     <NavLink
                       href="#about-us"

@@ -8,11 +8,13 @@ import "./assets/scss/argon-design-system-react.scss?v1.1.0";
 import "./assets/css/style.css";
 
 import Index from "./content/Index";
+import FAQC from "./content/FAQContainer";
 
 ReactDOM.render(
   <HashRouter base="honest-milk">
     <Switch>
       <Route path="/" exact render={props => <Index {...props} />} />
+      <Route path="/faq" exact render={props => <FAQC {...props}/>} />
       <Redirect to="/" />
     </Switch>
   </HashRouter>,

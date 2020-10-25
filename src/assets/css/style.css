@@ -228,3 +228,43 @@ body {
 p {
   font-weight: 400;
 }
+#how-it-works {
+  position: relative;
+}
+#how-it-works .hiw-ill {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+#hiw-ill-1 {
+  top: 150px;
+  left: 100px;
+  background-image: url('../img/icons/common/cow-milk.svg');
+}
+
+#hiw-ill-2 {
+  top: 550px;
+  right: 100px;
+  background-image: url('../img/icons/common/testing.svg');
+}
+
+#hiw-ill-3 {
+  top: 950px;
+  left: 100px;
+  background-image: url('../img/icons/common/packaging.svg');
+}
+
+#hiw-ill-4 {
+  top: 1250px;
+  right: 100px;
+  background-image: url('../img/icons/common/delivery.svg');
+}
+
+@media (max-width: 1159px) {
+  #how-it-works .hiw-ill {
+    display: none;
+  }
+}

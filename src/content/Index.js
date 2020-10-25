@@ -14,7 +14,6 @@ import ContactUs from "./ContactUs2";
 import BookVisit from './BookVisit';
 import HowItWorks from './HowItWorks';
 import PurityMeter from './PurityMeter';
-import FAQ from './FAQ';
 import Blog from './Blog';
 
 class Index extends React.Component {
@@ -30,7 +29,6 @@ class Index extends React.Component {
           <Blog />
           <PurityMeter />
           <BookVisit />
-          <FAQ />
           <HowItWorks />
           <ContactUs />
         </main>
