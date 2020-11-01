@@ -2,18 +2,10 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import logo from '../assets/img/brand/android-chrome-192x192.png';
 import box from '../assets/img/icons/common/box.svg';
 import cow from '../assets/img/icons/common/cow.svg';
 import shipped from '../assets/img/icons/common/shipped.svg';
 import test from '../assets/img/icons/common/test-tube.svg';
-
-function WorkIcon() {
-  return (
-      <img src={logo} alt="icon" width="64px" />
-  );
-}
-
 
 function Cow() {
   return (

@@ -16,11 +16,29 @@ import {
   Button
 } from "reactstrap";
 
+import apis from '../apis';
+
 // import Datepicker from "./IndexSections/Datepicker.js";
 
 class Landing extends React.Component {
   state = {};
   componentDidMount() {
+    
+  }
+  onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+  submit = (e) => {
+    console.log( this.state)
+    apis.addQuery(this.state)
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
   }
   render() {
     return (
@@ -67,6 +85,8 @@ class Landing extends React.Component {
                           <Input
                             placeholder="Your name"
                             type="text"
+                            name="name"
+                            onChange={this.onChange}
                             onFocus={e => this.setState({ nameFocused: true })}
                             onBlur={e => this.setState({ nameFocused: false })}
                           />
@@ -86,8 +106,10 @@ class Landing extends React.Component {
                       <Input
                         placeholder="Phone Number"
                         type="number"
+                        name="phone"
                         onFocus={e => this.setState({ emailFocused: true })}
                         onBlur={e => this.setState({ emailFocused: false })}
+                        onChange={this.onChange}
                       />
                     </InputGroup>
                   </FormGroup>
@@ -95,10 +117,11 @@ class Landing extends React.Component {
                     <Input
                       className="form-control-alternative"
                       cols="80"
-                      name="name"
+                      name="message"
                       placeholder="Type a message..."
                       rows="4"
                       type="textarea"
+                      onChange={this.onChange}
                     />
                   </FormGroup>
                   <div>
@@ -108,6 +131,7 @@ class Landing extends React.Component {
                       style={{backgroundColor: 'rgb(149, 224, 199)', border: 0}}
                       size="lg"
                       type="button"
+                      onClick={this.submit}
                     >
                       Send Message
                     </Button>

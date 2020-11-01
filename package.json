@@ -1,5 +1,5 @@
 {
-  "name": "honesty-milk-website",
+  "name": "honest-milk-website",
   "description": "Honest Milk App",
   "main": "index.js",
   "keywords": [
@@ -19,7 +19,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://umakantv.github.io/honestmilk",
+  "homepage": "https://honestmilk.github.io",
   "browserslist": [
     ">0.2%",
     "not dead",
